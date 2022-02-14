@@ -88,6 +88,8 @@ public class testEmployee {
             String expected = "Davidsson";
 
             String actual = testObject1.getLastName();
+
+            Assertions.assertEquals(expected, actual);
         }
 
 
