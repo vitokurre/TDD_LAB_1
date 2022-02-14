@@ -33,7 +33,7 @@ public class testEmployee {
         @Test
         public void checkGetUniqueIDtest(){
 
-            int expected = 1001;
+            int expected = 1;
 
 
             int actual = testObject1.getUniqueID();
@@ -42,15 +42,13 @@ public class testEmployee {
 
         }
 
-        @ParameterizedTest
-        @ValueSource (ints = {1001, 1002, 1003})
-
+        @Test
 
         public void checkGetUniqueID2test(){
 
-            int expected1 = 1001;
-            int expected2 = 1002;
-            int expected3 = 1003;
+            int expected1 = 1;
+            int expected2 = 2;
+            int expected3 = 3;
 
 
             int actual1 = testObject1.getUniqueID();
@@ -64,4 +62,11 @@ public class testEmployee {
         }
 }
 
-// testObjekt = new Person("Marcus", "Davidsson", 32, true);
+// @ParameterizedTest
+//    @ValueSource (ints = {-3, 5, 6, 10})
+//    public void checkNegativeValue(int intput){
+//        testObjekt = new myClass();
+//
+//        int actual = testObjekt.negatvie(intput);
+//
+//        assertFalse(testObjekt.negatvie(intput)>0);
