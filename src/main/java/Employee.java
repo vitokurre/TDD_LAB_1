@@ -1,11 +1,13 @@
 public class Employee {
 
-    int ID;
-    int IDCounter = 1001;
+    private int ID;
+    private static int counter;
 
     public Employee(String firstName, String lastName, int age, double salary){
-    ID = IDCounter;
-    IDCounter++;
+    counter = counter + 1;
+    ID = counter;
+    System.out.println(ID + "Detta är ID");
+    System.out.println(counter + "Detta är counter");
     }
 
     public int getUniqueID() {
