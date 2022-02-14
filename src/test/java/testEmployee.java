@@ -43,6 +43,9 @@ public class testEmployee {
         }
 
         @ParameterizedTest
+        @ValueSource (ints = {1001, 1002, 1003})
+
+
         public void checkGetUniqueID2test(){
 
             int expected1 = 1001;
