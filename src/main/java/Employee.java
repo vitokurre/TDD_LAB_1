@@ -1,10 +1,14 @@
 public class Employee {
 
-    public Employee(String firstName, String lastName, int age, double salary){
+    int ID;
+    int IDCounter = 1001;
 
+    public Employee(String firstName, String lastName, int age, double salary){
+    ID = IDCounter;
+    IDCounter++;
     }
 
-    public int getUniqueID(int ID) {
+    public int getUniqueID() {
         return ID;
     }
 
