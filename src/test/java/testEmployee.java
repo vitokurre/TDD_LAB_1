@@ -58,15 +58,15 @@ public class testEmployee {
             Assertions.assertEquals(expected1, actual1);
             Assertions.assertEquals(expected2, actual2);
             Assertions.assertEquals(expected3, actual3);
+        }
 
+        @Test
+
+        public void checkGetFirstNameTest(){
+            String expected = "Marcus";
+
+            String actual = testObject1.getFirstName();
         }
 }
 
-// @ParameterizedTest
-//    @ValueSource (ints = {-3, 5, 6, 10})
-//    public void checkNegativeValue(int intput){
-//        testObjekt = new myClass();
-//
-//        int actual = testObjekt.negatvie(intput);
-//
-//        assertFalse(testObjekt.negatvie(intput)>0);
+
