@@ -1,7 +1,4 @@
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
 
 public class testEmployee {
 
@@ -24,6 +21,17 @@ public class testEmployee {
             System.out.println("Test start");
 
             testObject = new Employee("Marcus", "Davidsson", 33, 10.000);
+        }
+
+
+        @Test
+        public void checkGetUniqueIDtest(){
+
+            int expected = 1001;
+
+            int actual = testObject.getUniqueID();
+
+
         }
 }
 
