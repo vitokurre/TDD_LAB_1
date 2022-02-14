@@ -116,7 +116,7 @@ public class testEmployee {
         public void checkSetAgeTest(){
             int expected = 45;
 
-            testObject1.setAge();
+            testObject1.setAge(expected;
         }
 
 
