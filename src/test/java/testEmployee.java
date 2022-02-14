@@ -29,7 +29,9 @@ public class testEmployee {
 
             int expected = 1001;
 
-            int actual = testObject.getUniqueID();
+            int ID = testObject.createUniqueID();
+
+            int actual = testObject.getUniqueID(ID);
 
 
         }
