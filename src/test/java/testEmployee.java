@@ -112,6 +112,13 @@ public class testEmployee {
             Assertions.assertEquals(expected, actual);
         }
 
+        @Test
+        public void checkSetAgeTest(){
+            int expected = 45;
+
+            testObject1.setAge();
+        }
+
 
 
 }
