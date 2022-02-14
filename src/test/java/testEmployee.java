@@ -24,9 +24,9 @@ public class testEmployee {
         public void beforeEach(){
             System.out.println("Test start");
 
-            testObject1 = new Employee("Marcus", "Davidsson", 33, 10.000);
-            testObject2 = new Employee("Jacob", "Nilsson", 23, 10.000);
-            testObject3 = new Employee("Anki", "Phan", 24, 10.000);
+            testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
+            testObject2 = new Employee("Jacob", "Nilsson", 23, 30500.00);
+            testObject3 = new Employee("Anki", "Phan", 24, 30500.00);
         }
 
 
@@ -121,6 +121,13 @@ public class testEmployee {
             int actual = testObject1.getAge();
 
             Assertions.assertEquals(expected,actual);
+        }
+
+        @Test
+        public void checkGetSalaryTest(){
+            double expected = 30500.00;
+
+            double actual = testObject1.getSalary();
         }
 
 
