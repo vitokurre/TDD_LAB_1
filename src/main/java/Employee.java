@@ -19,6 +19,6 @@ public class Employee {
     }
 
     public void setFirstName(String newFirstName) {
-
+        firstName = newFirstName;
     }
 }
