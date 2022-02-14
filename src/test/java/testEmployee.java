@@ -75,7 +75,7 @@ public class testEmployee {
     public void checkSetFirstNameTest(){
             String expected = "Bengt";
 
-            testObject1.setFirstName();
+            testObject1.setFirstName(expected);
 
         }
 
