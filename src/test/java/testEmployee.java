@@ -83,6 +83,13 @@ public class testEmployee {
 
         }
 
+        @Test
+        public void checkGetLastNameTest(){
+            String expected = "Davidsson";
+
+            String actual = testObject1.getLastName();
+        }
+
 
 }
 
