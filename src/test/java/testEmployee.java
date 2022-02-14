@@ -116,7 +116,11 @@ public class testEmployee {
         public void checkSetAgeTest(){
             int expected = 45;
 
-            testObject1.setAge(expected;
+            testObject1.setAge(45);
+
+            int actual = testObject1.getAge();
+
+            Assertions.assertEquals(expected,actual);
         }
 
 
